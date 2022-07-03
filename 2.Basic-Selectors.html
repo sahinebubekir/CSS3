@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Basic Selectors </title>
+ 
+    <style>
+ 
+ /* Tum h1'leri secmek */
+        /* h1{
+            color: red;
+            background-color: blue;
+        }
+
+        p{
+            color: red;
+            background-color: blue;
+        } */
+        /* Tum h1'leri ve p'leri secmek */
+ 
+        /* h1, p{
+            color: red;
+            background-color: blue;
+        } */
+
+        /* Id Selector */
+        /* #logo{ 
+            color: red;
+            background: blue;
+        } */
+
+        /* Class selector */
+        /* .info{
+            color: red;
+            background: blue;
+        } */
+
+        /* Id'si logo olanlar ve class'i lead olanlar'i secme */
+        /* #logo, .lead{
+            color: red;
+            background: blue;
+        } */
+
+        /* Id ve Class arasinda virgul olmadigi taktirde id'si para1 olan ve class'i lead olanlari secer */
+        /* #para1.lead{
+            color: red;
+            background: blue;
+        } */
+
+        /* Linklerin altinda bulunan cizgiyi kaldirmak icin kullanilir */
+        /* a{
+            text-decoration: none ;
+        } */
+
+        /* ul taginin altindaki li taginin altindaki a tagi anlamina gelir 
+         ul li a{
+            text-decoration: none;
+        } */
+
+        /* Class'i info olan elementin altindaki span'leri cek
+        .info span{
+            color: red;
+            background: blue;
+        } */
+
+/*         Class'i info olan elementin altinda bulunan ve class'i primary olan elementleri sec
+        .info .primary{
+            color: red;
+            background: blue;
+        } */
+
+        /* Sayfadaki tum elementler icin */
+        *{
+            font-size: 30px;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <header>
+ 
+        <h1> Header 1</h1>
+        <h1 id="logo"> Logo </h1>
+<ul>
+<li>
+    <a href="#"> Contact </a>
+</li>
+<li>
+    <a href="#"> Services </a>
+</li>
+ 
+</ul>
+ 
+    </header>
+    <h1> Header 2 </h1>
+    <p id="para1" class="lead info">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, tempora.
+    </p>
+ 
+    <p class="info">
+        Lorem ipsum <span class="primary">dolor</span>  sit amet consectetur adipisicing elit. Repudiandae sapiente vero et? Ad, ipsa fugiat?
+    </p>
+ 
+    <p class="info">
+        Lorem ipsum, <span>dolor</span> sit amet consectetur adipisicing elit. Blanditiis quod accusamus culpa praesentium, tempora quibusdam rerum cumque error? Delectus, quo?
+    </p>
+ 
+    <p> Test Paragraph </p>
+ 
+    <a href="#"> Home </a>
+</body>
+</html>
